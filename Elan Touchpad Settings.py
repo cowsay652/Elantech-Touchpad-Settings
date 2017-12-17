@@ -41,10 +41,7 @@ def apply(press):
 
 
 def about(press):
-    if press == "About":
-        app.showSubWindow("About")
-    else:
-        app.hideSubWindow("About")
+    app.infoBox("About", "Elantech Touchpad Settings\n\nVersion: 1.0\nCreator: The Sleepy Penguin\nYouTube: https://www.youtube.com/channel/UCszc1c-MjZB4p-hqUswlNVw\nGitHub: https://github.com/The-Sleepy-Penguin")
 
 
 # Configure
@@ -69,17 +66,17 @@ app.addButtons(["Apply", "About"], [apply, about])
 app.setCheckBox("Right Click", ticked=right_click, callFunction=False)
 app.setCheckBox("Use touchpad while using keyboard", ticked=disable_type, callFunction=False)
 
-app.startSubWindow("About")
-app.setPadding(5, 5)
-app.addLabel("title", "Elantech Touchpad Settings")
-app.getLabelWidget("title").config(font=("Segoe UI", "10", "bold"))
-app.addLabel("version", "Version : 1.0")
-app.addLabel("creator", "Created by: The Sleepy Penguin")
-app.setFont(9)
-app.addWebLink("YouTube Channel", "https://www.youtube.com/channel/UCszc1c-MjZB4p-hqUswlNVw")
-app.addWebLink("GitHub", "https://github.com/The-Sleepy-Penguin")
-app.addButton("OK", about)
-app.setButtonSticky("OK", "es")
-app.stopSubWindow()
+# app.startSubWindow("About")
+# app.setPadding(5, 5)
+# app.addLabel("title", "Elantech Touchpad Settings")
+# app.getLabelWidget("title").config(font=("Segoe UI", "10", "bold"))
+# app.addLabel("version", "Version : 1.0")
+# app.addLabel("creator", "Created by: The Sleepy Penguin")
+# app.setFont(9)
+# app.addWebLink("YouTube Channel", "https://www.youtube.com/channel/UCszc1c-MjZB4p-hqUswlNVw")
+# app.addWebLink("GitHub", "https://github.com/The-Sleepy-Penguin")
+# app.addButton("OK", about)
+# app.setButtonSticky("OK", "es")
+# app.stopSubWindow()
 
 app.go()
