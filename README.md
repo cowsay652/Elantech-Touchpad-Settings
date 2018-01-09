@@ -1,7 +1,7 @@
 # Elantech Touchpad Settings
 A small utility to allow Windows users with Elantech touchpads to enable the touchpad when typing and enable two finger right click.
 
-Download and unzip the repo, then run the Python file. You do not need Administrator privilages.
+Download and unzip the repo, then run the Python file. You do not need Administrator privilages. Once you have made your changes, reboot your PC.
 
 **Requires:**
 * [Python 3.x](https://www.python.org/)
